@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <main>
-        <div className="upper-container">
+        <article className="upper-container">
           <h1>Your Result</h1>
           <div className="result-container">
             <div className="result">
@@ -23,8 +23,8 @@ const App = () => {
               tests.
             </p>
           </div>
-        </div>
-        <div className="bottom-container">
+        </article>
+        <article className="bottom-container">
           <h2>Summary</h2>
           {summaryData.map((data) => (
             <SummaryBar
@@ -38,9 +38,9 @@ const App = () => {
           <div className="button-container">
             <button>Continue</button>
           </div>
-        </div>
+        </article>
       </main>
-      <div className="attribution">
+      <footer className="attribution">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
@@ -53,7 +53,7 @@ const App = () => {
           Mikiyas Kebede
         </a>
         .
-      </div>
+      </footer>
     </>
   );
 };
